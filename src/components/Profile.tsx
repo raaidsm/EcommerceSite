@@ -1,6 +1,6 @@
 import "./Profile.css"
 
-const Profile = props => {
+const Profile = (props: any) => {
     return (
         <div className="profile">
             <p>Name: {props.name}</p>
