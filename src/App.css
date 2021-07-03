@@ -2,10 +2,6 @@
   text-align: center;
   font-family: Consolas, serif;
   background-color: lightseagreen;
-}
-
-.App-header {
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,10 +9,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightseagreen;
-  }
 }
