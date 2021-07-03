@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h3>The profiles</h3>
         <Profile name="Raaid" age="22" description="Comp Sci Student"/>
         <Profile name="Natalie" age="20" description="Mermaid in a human body"/>
       </header>

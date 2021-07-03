@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: lightseagreen;
 }
 
 .App-logo {
@@ -35,4 +36,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.profile {
+  border-style: solid;
+  border-color: darkblue;
+  border-width: medium;
+  margin: 14px;
+  padding: 10px;
+
 }
