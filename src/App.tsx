@@ -20,6 +20,7 @@ function App() {
           Learn React
         </a>
         <Profile name="Raaid" age="22" description="Comp Sci Student"/>
+        <Profile name="Natalie" age="20" description="Mermaid in a human body"/>
       </header>
     </div>
   );
