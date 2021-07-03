@@ -13,14 +13,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.profile{
-
-  background-color: lightpink;
-  width: 80vh;
-  height: auto;
-  border-color: darkblue;
-  border-style:  solid;
-  margin: 10px;
-  padding: 15px;
-}
