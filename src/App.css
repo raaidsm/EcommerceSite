@@ -14,7 +14,10 @@
 }
 
 .profile{
-  border-width: medium;
+
+  background-color: lightpink;
+  width: 80vh;
+  height: auto;
   border-color: darkblue;
   border-style:  solid;
   margin: 10px;
