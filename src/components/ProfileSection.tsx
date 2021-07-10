@@ -1,10 +1,34 @@
 import "./ProfileSection.css";
-import React, {FC} from "react";
+import React, {DragEventHandler, FC, useRef} from "react";
 
 const ProfileSection: FC = props => {
+    const profileSectionDiv: any = useRef(null);
+
+    const onDragOver: DragEventHandler<HTMLDivElement> = (event) => {
+        event.preventDefault();
+        const afterElement: Element = getDraggableAfterElement(profileSectionDiv.current, event.clientY);
+    };
+
+    const getDraggableAfterElement = (container: HTMLDivElement, y: number) : Element => {
+        const draggableElements: Element[] = [...container.querySelectorAll(".draggable:not(.dragging)")];
+
+        const afterElement: Element | undefined =  draggableElements.reduce((previousResult: { offset: number, previousElement?: Element }, currentElement: Element) => {
+            const box: DOMRect = currentElement.getBoundingClientRect();
+            const offset: number = y - box.top - box.height / 2;
+            if (offset < 0 && offset > previousResult.offset) {
+                return { offset: offset, previousElement: currentElement };
+            }
+            else {
+                return previousResult
+            }
+        }, { offset: Number.NEGATIVE_INFINITY }).previousElement;
+
+        return afterElement!;
+    };
+
     return <div>
         <h3>The Profiles</h3>
-        <div className="profile-section">
+        <div ref={profileSectionDiv} className="profile-section" onDragOver={onDragOver}>
             {props.children}
         </div>
     </div>;

@@ -7,7 +7,7 @@ interface ProfileProps {
     description: string;
 }
 
-const Profile: FC<ProfileProps> = (props: any) => {
+const Profile: FC<ProfileProps> = (props) => {
     const [classNames, setClassNames] = useState(" profile draggable");
 
     const onDragStart: DragEventHandler<HTMLDivElement> = () => {
