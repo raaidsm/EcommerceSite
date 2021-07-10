@@ -35,7 +35,7 @@ const ProfileSection: FC = props => {
     };
 
     return <div>
-        <h3>The Profiles</h3>
+        <h3>User Profiles</h3>
         <div ref={profileSectionDiv} className="profile-section" onDragOver={onDragOver}>
             {props.children}
         </div>
