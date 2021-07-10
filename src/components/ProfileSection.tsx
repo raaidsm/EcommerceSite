@@ -6,7 +6,10 @@ const ProfileSection: FC = props => {
 
     const onDragOver: DragEventHandler<HTMLDivElement> = (event) => {
         event.preventDefault();
+        const dragging = document.querySelector(".dragging");
         const afterElement: Element = getDraggableAfterElement(profileSectionDiv.current, event.clientY);
+        if (afterElement === undefined) profileSectionDiv.current.appendChild(dragging);
+        else profileSectionDiv.current.insertBefore(dragging, afterElement);
     };
 
     const getDraggableAfterElement = (container: HTMLDivElement, y: number) : Element => {
