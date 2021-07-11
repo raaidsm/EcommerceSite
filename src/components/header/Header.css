@@ -15,14 +15,17 @@
 }
 /* When you hover over a link in the header */
 .header a:hover{
-    background-color: #ddd;
+    background-color: lightblue;
     color: black;
+    border-radius: 3px;
+    padding: 7px 13px;
 }
 
 
 .header a.active {
     background-color: lightgreen;
     color: white;
+    transition: .5s;
 }
 
 .header .icon {

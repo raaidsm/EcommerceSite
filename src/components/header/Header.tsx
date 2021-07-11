@@ -11,9 +11,9 @@ const Header: FC<HeaderProps> = (props: any) => {
             <a href="#" className="logo">The React App :)</a>
         </div>
            <header>
-               <a className="header-link"  href="#">Shop</a>
-               <a href="#">Blog</a>
-               <a href="#">About Us</a>
+               <a className="active"  href="#">Shop</a>
+               <a className="active" href="#">Blog</a>
+               <a className="active" href="#">About Us</a>
            </header>
     </div>;
 }
