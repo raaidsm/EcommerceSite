@@ -7,8 +7,13 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = (props: any) => {
     return <div className="header">
+        <div className="logo">
+            <a href="#" className="logo">The React App :)</a>
+        </div>
            <header>
-               <h1>This is a header</h1>
+               <a className="header-link"  href="#">Shop</a>
+               <a href="#">Blog</a>
+               <a href="#">About Us</a>
            </header>
     </div>;
 }
