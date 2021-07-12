@@ -1,18 +1,47 @@
 /* Header */
 .header {
-    height: 100px;
+    background-color: lightblue;
     width: 100%;
-    background-color: darksalmon;
-    display: block;
-    overflow: hidden;
+    height: 80px;
+    font-family: Arial, sans-serif;
+    display: flex;
 }
-/* Header Link */
-.header a{
-    margin: 15px;
+
+.header .headerLeft {
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.header .headerRight{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.Navbar .headerRight .links{
+    max-height: 80px;
+}
+
+.header .headerRight .links a{
     text-decoration: none;
-    float: right;
-    line-height: 65px;
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
 }
+
+.Header .headerLeft button{
+    display: none;
+}
+
+.Header .headerLeft #hidden{
+    display: flex;
+}
+
 /* When you hover over a link in the header */
 .header a:hover{
     background-color: lightblue;
@@ -21,45 +50,46 @@
     padding: 7px 13px;
 }
 
-
-.header a.active {
-    background-color: lightgreen;
-    color: white;
-    transition: .5s;
+button:hover{
+    cursor: pointer;
 }
+@media only screen and (max-width: 850px) {
+    .Header .headerRight .links a{
+        font-size: 15px;
 
-.header .icon {
-    display: none;
-}
-
-
-h1{
-    text-align: left;
-}
-
-.logo{
-    float: left;
-    line-height: 65px;
-}
-
-@media screen and (max-width: 600px) {
-    .header a:not(:first-child) {display: none;}
-    .header a.icon {
-        float: right;
-        display: block;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .header.responsive {position: relative;}
-    .header.responsive .icon {
+@media only screen and (max-width: 750px) {
+    .Header .headerRight button{
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .Header.headerRight .links{
+        display: none;
+    }
+
+    .Header .headerRight #hidden{
         position: absolute;
-        right: 0;
-        top: 0;
+        left: 0px;
+        top: 80px;
+        height: 230px;
+        max-height: 230px;
+        width: 100%;
+        background-color: darkslateblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
-    .header.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+
+    .Navbar .headerRight #hidden a{
+        margin: 10px;
+        font-size: 25px;
     }
 }
+
+
+
