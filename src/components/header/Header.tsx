@@ -22,10 +22,7 @@ const Header: FC<HeaderProps> = (props: any) => {
             </div>
             <button onClick={ () => setShowLinks(!showLinks)}>Open</button>
         </div>
-
     </div>;
-
-
 }
 
 export default Header;
