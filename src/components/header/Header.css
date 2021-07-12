@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.header .headerLeft {
+.header .header-left {
     flex: 50%;
     display: flex;
     justify-content: flex-start;
@@ -16,12 +16,12 @@
 
 }
 
-.header .headerLeft a{
+.header .header-left a{
     text-decoration: none;
     margin-left: 25px;
 }
 
-.header .headerRight{
+.header .header-right{
     flex: 50%;
     display: flex;
     align-items: center;
@@ -29,22 +29,22 @@
     padding-right: 25px;
 }
 
-.header .headerRight .links{
+.header .header-right .links{
     max-height: 80px;
 }
 
-.header .headerRight .links a{
+.header .header-right .links a{
     text-decoration: none;
     color: white;
     font-size: 25px;
     margin-left: 25px;
 }
 
-.header .headerRight button{
+.header .header-right button{
     display: none;
 }
 
-.header .headerRight #hidden{
+.header .header-right #hidden{
     display: flex;
 }
 
@@ -60,23 +60,23 @@ button:hover{
     cursor: pointer;
 }
 @media only screen and (max-width: 850px) {
-    .header .headerRight .links a{
+    .header .header-right .links a{
         font-size: 15px;
 
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .header .headerRight button{
+    .header .header-right button{
         display: flex;
         margin-left: 20px;
     }
 
-    .header .headerRight .links{
+    .header .header-right .links{
         display: none;
     }
 
-    .header .headerRight #hidden{
+    .header .header-right #hidden{
         position: absolute;
         left: 0px;
         top: 80px;
@@ -89,7 +89,7 @@ button:hover{
         align-items: center;
     }
 
-    .header .headerRight #hidden a{
+    .header .header-right #hidden a{
         margin: 10px;
         font-size: 25px;
     }
