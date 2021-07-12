@@ -8,7 +8,7 @@ interface HeaderProps {
 
 }
 
-const Header: FC<HeaderProps> = (props: any) => {
+function Header() {
     const [showLinks, setShowLinks] = useState(false);
     return <div className="header">
         <div className="headerLeft">

@@ -34,11 +34,11 @@
     margin-left: 25px;
 }
 
-.Header .headerLeft button{
+.Header .headerRight button{
     display: none;
 }
 
-.Header .headerLeft #hidden{
+.Header .headerRight #hidden{
     display: flex;
 }
 
@@ -64,10 +64,9 @@ button:hover{
     .header .headerRight button{
         display: flex;
         margin-left: 20px;
-
     }
 
-    .header.headerRight .links{
+    .header .headerRight .links{
         display: none;
     }
 
@@ -82,7 +81,6 @@ button:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .header .headerRight #hidden a{
