@@ -12,8 +12,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-
 }
 
 .header .header-left a{
@@ -62,7 +60,6 @@ button:hover{
 @media only screen and (max-width: 850px) {
     .header .header-right .links a{
         font-size: 15px;
-
     }
 }
 

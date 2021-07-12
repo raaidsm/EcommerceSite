@@ -2,7 +2,7 @@ import {FC} from "react";
 import React, {useState} from 'react'
 import "./Header.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faGem } from '@fortawesome/free-solid-svg-icons'
 
 interface HeaderProps {
 
@@ -22,7 +22,7 @@ function Header() {
             </div>
 
             <button className="fas fa-bars" onClick={ () => setShowLinks(!showLinks)}>
-                <FontAwesomeIcon icon={faBars} size="5x"/>
+                <FontAwesomeIcon icon={faGem} size="3x"/>
             </button>
         </div>
     </div>;
