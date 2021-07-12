@@ -34,17 +34,17 @@
     margin-left: 25px;
 }
 
-.Header .headerRight button{
+.header .headerRight button{
     display: none;
 }
 
-.Header .headerRight #hidden{
+.header .headerRight #hidden{
     display: flex;
 }
 
 /* When you hover over a link in the header */
 .header a:hover{
-    background-color: lightblue;
+    background-color: lightpink;
     color: black;
     border-radius: 3px;
     padding: 7px 13px;
