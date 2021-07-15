@@ -3,6 +3,7 @@ import './App.css';
 import ProfileSection from "./components/ProfileSection";
 import Profile from "./components/Profile";
 import Header from "./components/header/Header"
+import NewProfile from "./components/NewProfile/NewProfile"
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Profile name="Chris" age={26} description="Cat Man >:)"/>
                 <Profile name="Brandon" age={20} description="don't talk to me"/>
             </ProfileSection>
+            <NewProfile></NewProfile>
 
         </main>
     );

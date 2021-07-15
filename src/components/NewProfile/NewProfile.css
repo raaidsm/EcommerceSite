@@ -1,0 +1,33 @@
+.form-bg{
+    background-color: darkslateblue;
+    padding: 25px;
+    margin: 45px;
+    display: inline-flex;
+    justify-content: center;
+    border-color: white;
+    border-radius: 250px;
+    border-style: solid;
+}
+
+.attributes {
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-flex;
+
+
+    /*display: flex;*/
+    /*flex: 50%;*/
+
+}
+
+
+label {
+    font-size: 19px;
+    margin: 15px;
+    /*padding: 10px*/
+
+}
+
+button {
+    margin-left: 15px;
+}
