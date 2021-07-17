@@ -3,10 +3,11 @@ import './App.css';
 import ProfileSection from "./components/ProfileSection";
 import Profile from "./components/Profile";
 import Header from "./components/header/Header"
-import NewProfile from "./components/NewProfile/NewProfile";
+import NewProfile from "./components/new_profile/NewProfile";
+import ProfileData from './components/new_profile/ProfileData';
 
 function App() {
-    const addProfileHandler = (profile: any) => {
+    const addProfileHandler = (profile: ProfileData) => {
         console.log(profile);
 
     };

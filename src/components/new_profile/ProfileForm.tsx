@@ -1,6 +1,14 @@
 import React, {FC, useState} from 'react';
 import './NewProfile.css'
-const ProfileForm = (props: any) => {
+import UserInput from './UserInput';
+
+//Raaid: Added this interface to define the props for ProfileForm components
+interface ProfileFormProps {
+    onNewProfileData(profileData: UserInput): void;
+}
+
+//Raaid: Changed the type of props to ProfileFormProps
+const ProfileForm = (props: ProfileFormProps) => {
 
 
     const [enteredName, setEnteredName] = useState('');
@@ -35,22 +43,25 @@ const ProfileForm = (props: any) => {
     const handleSubmit = (event: any) => {
         event.preventDefault() //stops the page from reloading when the form is submitted which is the default request
 
-        const profileData = {
+        //Raaid: Changed the name of this to userInput
+        const userInput = {
             name: enteredName,
-            age: enteredAge,
+            //Parsed this as an int
+            age: parseInt(enteredAge),
             desc: enteredDesc
         }
 
 
 
-        props.onNewProfileData();
+        props.onNewProfileData(userInput);
 
         //resets imput to empty strings.
         setEnteredName("");
         setEnteredAge("");
         setEnteredDesc("");
 
-        console.log("ProfileForm", profileData);
+        //Raaid: Commented out this unnecessary console log
+        //console.log("ProfileForm", userInput);
 
 
     }

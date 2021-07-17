@@ -1,6 +1,6 @@
 import "./Profile.css"
 import React, {FC} from "react";
-import NewProfile from "./NewProfile/NewProfile";
+import NewProfile from "./new_profile/NewProfile";
 import ProfileSection from "./ProfileSection";
 
 interface ProfileProps {
