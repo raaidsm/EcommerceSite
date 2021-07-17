@@ -2,11 +2,20 @@ import React from 'react';
 import ProfileForm from './ProfileForm'
 import './NewProfile.css'
 
-const NewExpense = () => {
+
+const NewProfile = (props: any) => {
+    const saveProfileDataHandler = (enteredProfileData: any) => {
+        const profileData = {
+            ...enteredProfileData,
+            id: Math.random().toString()
+        };
+        props.onAddProfile(profileData);
+
+    };
     return <div>
-        <ProfileForm></ProfileForm>
+        <ProfileForm onNewProfileData={saveProfileDataHandler}></ProfileForm>
     </div>
 };
 
 
-export default NewExpense;
+export default NewProfile;

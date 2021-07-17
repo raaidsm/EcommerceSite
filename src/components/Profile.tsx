@@ -1,5 +1,7 @@
 import "./Profile.css"
-import {FC} from "react";
+import React, {FC} from "react";
+import NewProfile from "./NewProfile/NewProfile";
+import ProfileSection from "./ProfileSection";
 
 interface ProfileProps {
     name: string;
@@ -7,11 +9,14 @@ interface ProfileProps {
     description: string;
 }
 
+
 const Profile: FC<ProfileProps> = (props: any) => {
     return <div className="profile">
+
         <p>Name: {props.name}</p>
         <p>Age: {props.age}</p>
         <p>Description: {props.description}</p>
+
     </div>;
 }
 
