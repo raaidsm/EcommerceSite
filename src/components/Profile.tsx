@@ -10,7 +10,7 @@ interface ProfileProps {
 }
 
 
-const Profile: FC<ProfileProps> = (props: any) => {
+const Profile: FC<ProfileProps> = (props) => {
     return <div className="profile">
 
         <p>Name: {props.name}</p>
