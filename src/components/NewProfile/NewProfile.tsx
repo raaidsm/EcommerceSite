@@ -11,6 +11,7 @@ const NewProfile = (props: any) => {
         };
         props.onAddProfile(profileData);
 
+
     };
     return <div>
         <ProfileForm onNewProfileData={saveProfileDataHandler}></ProfileForm>
