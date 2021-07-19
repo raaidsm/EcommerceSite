@@ -1,7 +1,7 @@
 interface UserInput {
     name: string;
     age: number;
-    desc: string;
+    description: string;
 }
 
 export default UserInput;

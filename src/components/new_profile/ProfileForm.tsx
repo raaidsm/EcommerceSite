@@ -48,7 +48,7 @@ const ProfileForm = (props: ProfileFormProps) => {
             name: enteredName,
             //Parsed this as an int
             age: parseInt(enteredAge),
-            desc: enteredDesc
+            description: enteredDesc
         }
 
 

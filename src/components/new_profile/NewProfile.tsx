@@ -1,23 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import ProfileForm from './ProfileForm'
 import './NewProfile.css'
 import UserInput from './UserInput';
-import ProfileData from './ProfileData';
 
 interface NewProfileProps {
-    onAddProfile(profile: ProfileData): void;
+    onAddProfile(profile: UserInput): void;
 }
 
-const NewProfile = (props: any) => {
+const NewProfile: FC<NewProfileProps> = (props) => {
     //Raaid: Changed the type of this function's parameter to UserInput and the name to userInput
     const saveProfileDataHandler = (userInput: UserInput) => {
-        const profileData = {
-            ...userInput,
-            id: Math.random().toString()
-        };
-        props.onAddProfile(profileData);
-
-
+        props.onAddProfile(userInput);
     };
     return <div>
         <ProfileForm onNewProfileData={saveProfileDataHandler}></ProfileForm>
