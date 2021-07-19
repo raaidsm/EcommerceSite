@@ -1,4 +1,4 @@
-import {Reducer, useEffect, useReducer, useState} from 'react';
+import {Reducer, useReducer} from 'react';
 import './App.css';
 import ProfileSection from "./components/ProfileSection";
 import Profile from "./components/Profile";
@@ -39,8 +39,6 @@ function App() {
     ] });
 
     const addProfileHandler = (profile: UserInput) => {
-        //DEBUGGING
-        console.log("New Profile = " + profile);
         dispatch({ type: ActionType.ADD, payload: profile });
     };
 
